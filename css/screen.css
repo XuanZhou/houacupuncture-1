@@ -1,0 +1,4 @@
+/* Import stylesheets and hide from ie/mac \*/
+@import url("master.css");
+@import url("fancy.css");
+/* end import/hide */

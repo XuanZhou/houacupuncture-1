@@ -1,0 +1,1380 @@
+/* COLOR CHART -----------
+ 
+ white      #fff
+ light beige  #f9f7f4
+ medium beige #f1ede7
+ 
+ text grey    #2c2d2d
+ dark grey    #121212
+ 
+ blue     #13b6bd
+ pink     #d1004f
+
+------------------------ */
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-weight: normal;
+}  
+
+hr { display: none; }
+
+body {
+	font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+	color: #323232;
+	background: #d6ddbe url("../images/dx-bckg.gif") repeat-y left;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+img { border: none; }
+
+#actus .spip_documents_left {
+	margin-right:25px;
+	display: block;
+}
+
+#lab .spip_documents_left {
+	margin-right:25px;
+	display: block;
+}
+
+section#form-panel p.error {
+	color:red;
+}
+
+fieldset legend { display:none; }
+
+/* ----------------------------------------------------------------
+
+  @LINKS 
+  
+------------------------------------------------------------------- */
+a { outline: none;  -webkit-transition: color .3s linear;
+}
+
+a:link {
+	color: #b6004b;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #b6004b;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #333;
+	text-decoration: none;/* padding-bottom: 2px;
+  border-bottom: 2px solid rgba(255,255,255,.2); */
+}
+
+a:active {
+	color: #b6004b;
+	text-decoration: none;
+}
+
+a span.two { color: #d1004f; }
+
+/* ----------------------------------------------------------------
+
+  @LAYOUT 
+  
+------------------------------------------------------------------- */  
+#wrapper {
+	width: 995px;
+	/*background: url("http://www.houacupunctureclinic.com/images/arrow-top.gif") no-repeat 0 23px;*/
+}
+
+nav {
+	display: block;
+	padding-left:30px;
+}
+
+section {
+	display: block;
+	margin: 10px 30px 28px 30px;/*border-top: 1px dotted #999;*/
+}
+
+section aside {
+	float: left;
+	padding-top: 22px;
+	width: 165px;
+	text-align: right;
+}
+
+section aside li { line-height:2em; text-transform:capitalize; }
+
+section aside h2 {
+	font-size: 95%;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	padding-bottom: 17px;
+	color:#999;
+}
+
+section section {
+	width: 750px;
+	float: right;
+	padding-top: 20px;
+	margin: 0;
+	border: 0;
+}
+
+section#reference section,  section#agence-content section { padding-top: 0; }
+
+/* ----------------------------------------------------------------
+
+  @NAV 
+  
+------------------------------------------------------------------- */
+#nav li {
+	float: left;
+	width: auto;
+	margin-top:40px;
+	margin-right:45px;
+	padding: 20px 0;
+}
+
+#nav li#nav-home {
+	width: auto;
+	text-align: right;
+	margin-right: 60px;
+	margin-top:0;
+}
+
+#nav li a {
+	color: #666;
+	font-size:16px;
+}
+
+#nav li a:hover { color: #b6004b; }
+
+#nav li a.active { color: #b6004b; }
+
+#nav li#private {
+	float: right;
+	width: 30px;
+}
+
+#nav li#private a {
+	margin-top: 1px;
+	display: block;
+	width: 30px;
+	height: 10px;
+	text-indent: -5000px;
+	background: url("http://www.houacupunctureclinic.com/images/private.gif") no-repeat 100% 0;
+}
+
+#nav li#private a:hover { background: url("http://www.houacupunctureclinic.com/images/private.gif") no-repeat 100% -10px; }
+
+/* ----------------------------------------------------------------
+
+  @HEADER 
+  
+------------------------------------------------------------------- */
+header {
+	display: block;
+	padding-left:18px;
+}
+
+header #brand {
+	float: left;
+	width: 160px;
+	margin-top: 35px;
+	text-align: right;
+}
+
+header section {
+	/*float: right;*/
+    width: 100%;
+	padding:0;
+	/*background: url("http://www.houacupunctureclinic.com/images/bg-dotted-black.gif") repeat-x 0 0;*/
+	margin: 0;
+	border: 0;
+}
+
+header h1 {
+	/* width: 730px;
+  height: 50px;
+  background: url("http://www.houacupunctureclinic.com/img/ir-h1-homepage.gif") no-repeat 0 0;
+  text-indent: -5000px; */
+  /* font-family: "Helvetica Neue", Arial, sans-serif; */
+  font-weight: bolder;
+	text-transform: uppercase;
+	font-size: 300%;
+	letter-spacing: -1px;
+}
+
+#baseline {
+	margin: 20px 90px 0 0;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 240%;
+	font-weight: normal;
+	letter-spacing: -1px;
+	color: #b6004b;
+	line-height: 1.33em;
+}
+
+#baseline span.amp {
+	font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+	font-style: italic;
+}
+
+#workwithus {
+	margin: 40px 0 0 0;
+	color: #f0eba8;
+}
+
+#workwithus a { color: #fff; }
+
+#price.strong {
+	padding: 5px 0 5px 15px;
+	background: #CC6 no-repeat 0 50%;
+	font-weight: normal;
+}
+
+#price {
+	padding: 5px 10px;
+	color: #333;
+	background: #CC6;
+}
+
+#workwithus a:hover span { color: #fff; }
+
+#header-info {
+	margin-top: 1em;
+	font-size: 100%;
+	color: #666;
+}
+
+#header-info a {
+	color: #f0eba8;
+	padding-right: 10px;
+}
+
+#header-info a:hover { color: #13b6bd; }
+
+/* ----------------------------------------------------------------
+
+  @CONTACT PANEL 
+  
+------------------------------------------------------------------- */
+section#contact-panel {
+	display: none;
+	overflow:hidden;
+	position:relative;
+	height:450px;
+	padding:0;
+}
+
+section#form-panel fieldset { border: none; }
+
+section#contact-panel h3 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 240%;
+	font-weight: normal;
+	font-style: italic;
+	letter-spacing: -1px;
+	color: #13b6bd;
+	line-height: 1.33em;
+}
+
+section#contact-panel p {
+	font-size: 110%;
+	color: #666;
+}
+
+section#form-panel fieldset div { padding-bottom: 20px; }
+
+section#form-panel fieldset div#submit {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	padding-left: 150px;
+	border-bottom: none;
+}
+
+section#form-panel fieldset div#submit input {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+section#form-panel fieldset label {
+	width: 140px;
+	float: left;
+	color: #fff;
+	font-size: 110%;
+	padding-top: 5px;
+}
+
+section#form-panel fieldset span {
+	width: 490px;
+	float: right;
+}
+
+section#form-panel #eMail,  section#form-panel #name,  section#form-panel textarea {
+	font-size: 130%;
+	padding: 4px;
+	color: #111;
+	width: 480px;
+	border: 1px dotted #999;
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;/*background: #eee;*/
+  }
+
+/* section#contact section input.text:focus,
+    section#contact section textarea:focus {
+      background: #fff;
+    } */
+
+section#slide {
+	width:2190px;
+	position:absolute;
+	padding:0;
+	left:-730px;
+	background:none;
+}
+
+section#form-panel, section#gmap-panel-paris, section#gmap-panel-bordeaux {
+	float:left;
+	background:none;
+	padding:0;
+	width:640px;
+	margin-right:90px;
+}
+
+section#contact-panel { padding:45px 0 0; }
+
+section#contact-panel ul {
+	padding:10px 0;
+	margin:20px 90px 20px 0;
+	border-top:1px solid #333333;
+	border-bottom:1px solid #333333;
+}
+
+section#contact-panel ul li { float:left; }
+
+section#contact-panel ul li a {
+	font-size:110%;
+	margin:0 50px;
+}
+
+section#contact-panel ul li a.current { color:white; }
+
+section#contact-panel ul li a.lien-gmap-paris { margin:0; }
+
+section#contact-panel ul li a.lien-gmap-bdx { margin:0; }
+
+#map_paris, #map_bordeaux {
+	width: 450px;
+	height: 300px;
+	float:right;
+}
+
+#map_paris span, #map_bordeaux span { display:none; }
+
+.focus { /*** Retour à l'état normal après l'utilisation ***/
+	background: #ddd;
+	color: black;
+}
+
+.normal { /*** Retour à l'état normal après l'utilisation ***/
+	background: white;
+	color: black;
+}
+
+.erreur { background:red; }
+
+#but_submit {
+	margin:5px 0;
+	background: transparent;
+}
+
+span.title-video { float:right; width:480px; padding-bottom:6px;}
+/* ----------------------------------------------------------------
+
+  @FILTER 
+  
+------------------------------------------------------------------- */
+#portfolio-filter dt {
+	font-size: 95%;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	padding-bottom: 17px;
+	border-bottom: 1px solid #333;
+	font-weight: bold;
+}
+
+#portfolio-filter dd {
+	padding: 0.8em 0;
+	border-bottom: 1px solid #333;
+	text-align: right;
+}
+
+#portfolio-filter dd a { color: #666; }
+
+#portfolio-filter dd a:hover { color: #13b6bd; }
+
+#portfolio-filter dd a.current {
+	color: #fff;
+	padding-left: 16px;
+	background: url("http://www.houacupunctureclinic.com/images/tick.gif") no-repeat 0 50%;
+}
+
+/* ----------------------------------------------------------------
+
+  @THUMBNAILS VIEW
+  
+------------------------------------------------------------------- */
+section#projects section {
+	width: 750px;
+	margin-right: -20px;
+}
+
+section#projects #portfolio-list li {
+	display: block;
+	width: 230px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 25px;
+	font-size: 110%;
+	background: #252525;
+}
+
+section#projects figure a {
+	display: block;
+	position: relative;
+	padding: 5px 5px 10px 5px;
+}
+
+section#projects figure img {
+	display: block;
+	width: 220px;
+	height: 83px;
+	margin-bottom: 10px;
+}
+
+section#projects figure strong {
+	color: #f0eba8;
+	display: block;
+	line-height: 1.5em;
+	margin: 5px 0 3px 0;
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+section#projects figure em {
+	font-style: normal;
+	color: #fff;
+	display: block;
+}
+
+section#projects figure span { display: none; }
+
+.new {
+	padding-left: 21px;
+	background: url("http://www.houacupunctureclinic.com/images/marker-new.png") no-repeat 0 40%;
+}
+
+/* section#projects article a:hover strong,
+section#projects article a:hover em {
+  color: #1a1a1a;
+}
+  section#projects article a:hover {
+    text-decoration: none;
+    
+  }
+  section#projects article a:hover span {
+    display: block;
+    position: absolute;
+    color: #fff;
+    padding: 3px 5px;
+    background: #1a1a1a;
+    top: 40px;
+    left: 75px;
+    font-size: 85%;
+  } */
+
+/* ----------------------------------------------------------------
+
+  @BLOGPOSTS VIEW
+  
+------------------------------------------------------------------- */
+section#posts article {
+	display: block;
+	padding-left:32px;
+	border-left: 1px dotted #999;
+}
+
+section#posts article.last { border-bottom: none; }
+
+section#posts article h3 {
+	width: 580px;
+	margin-bottom: 0.8em;
+}
+
+section#posts article h3 a { color: #B6004B; }
+
+section#posts article h3 a:hover { color: #B6004B; }
+
+#lab section#posts article h3 {
+	width: auto;
+	margin-right:15px;
+}
+
+section#posts article.post h3 {
+	font-size: 240%;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-weight: normal;
+}
+
+section#posts article.breve h3 {
+	font-size: 150%;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+section#posts article.breve li {
+	padding: 0.8em 0.4em;
+	list-style: disc;
+	list-style-position: inside;
+	font-size:14px;
+}
+
+section#posts article.breve img {
+	border:none;
+	padding:0 20px 20px 0;
+}
+
+section#posts article.breve li a { color: #b6004b; }
+
+section#posts article.breve li a:hover {
+	color: #b6004b;
+	text-decoration:underline;
+}
+
+section#posts article.bookmark h3 { font-size: 110%; }
+
+section#posts article h4 {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 150%;
+	font-weight: normal;
+	font-style: italic;
+	color: #fff;
+	margin-bottom: 1em;
+	line-height: 1.4em;
+	width: 580px;
+}
+
+#lab section#posts article h4 {
+	width:auto;
+	margin-right:15px;
+}
+
+#lab section#posts article p {
+	width:auto;
+	margin-right:15px;
+}
+
+section#posts article p {
+	font-size: 110%;
+	width: 100%;
+	line-height: 1.5em;
+	color: #903;
+	margin: 10px 0;
+}
+
+section#posts article p small {
+	font-size:11px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#999;
+}
+
+section#posts article p a.read {
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	font-size: 90%;
+	display: block;
+	margin-top: 0.4em;
+}
+
+section#posts article aside {
+	background: none;
+	padding: 0;
+	display: block;
+	float: right;
+	width: 80px;
+	text-align: right;
+}
+
+section#posts article aside li {
+	color: #666;
+	margin-bottom: 0.7em;
+}
+
+section#posts article aside li span {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-weight: bold;
+}
+
+section#posts article aside li a {
+	text-transform: uppercase;
+	color: #666;
+	font-weight: normal;
+	font-size: 90%;
+}
+
+section#posts article aside li a:hover { color: #f0eba8; }
+
+/* ----------------------------------------------------------------
+
+  @BASKETS
+  
+------------------------------------------------------------------- */
+section#baskets {
+	padding-left: 220px;
+	padding-bottom: 10px;
+	padding-top:10px;
+	border-top:1px dotted #999;
+}
+
+section#baskets section {
+	width: 230px;
+	float: left;
+	margin-right: 20px;
+	font-size: 100%;
+	background: url("http://www.houacupunctureclinic.com/images/bg-dotted-black.gif") repeat-x 0 0;
+}
+
+section#baskets section.right { margin-right: 0; }
+
+section#baskets h2 {
+	font-size: 92%;
+	letter-spacing: 0.7px;
+	text-transform: uppercase;
+	margin-bottom: 18px;
+}
+
+section#main-board li { padding: 0.8em 0;/*border-bottom: 1px dotted #999;*/
+}
+
+section#main-board li a { color: #b6004b; }
+
+section#main-board li a:hover {
+	color: #b6004b;
+	text-decoration:underline;
+}
+
+section#contact p, section#news p {
+	line-height: 1.4em;
+	padding-top: 0.8em;
+}
+
+section#contact p a, section#news p a { color: #fff; }
+
+section#contact p a:hover,  section#news p a:hover { color: #b6004b; }
+
+section#baskets p {
+	padding:0.8em 0;
+	line-height: 1.5em;
+}
+
+section#baskets p.goto a { color: #b6004b; }
+
+section#baskets p.goto a:hover { color: #333; }
+
+section#about img {
+	margin-top: 0.8em;
+	display: block;
+}
+
+/* ----------------------------------------------------------------
+
+  PAGE= @PROJETS
+  
+------------------------------------------------------------------- */
+#projets section#projects #portfolio-list li {
+	border-bottom: 1px dotted #999;
+	padding-bottom: 25px;
+}
+
+/* ----------------------------------------------------------------
+
+  @SLIDER
+  
+------------------------------------------------------------------- */
+#slider-container {
+	position: relative;
+	padding-bottom: 20px;
+	width: 730px;
+	height: 390px;
+	border-bottom: 1px solid #333;
+}
+
+#slider ul, #slider li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#slider li {
+	width: 730px;
+	height: 400px;
+	overflow: hidden;
+}
+
+#slider li span {
+	display: block;
+	padding-top: 10px;
+	color: #666;
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+}
+
+#prevBtn, #nextBtn {
+	width: 10px;
+	height: 11px;
+	position: absolute;
+	right: 0;
+	bottom: 14px;
+}
+
+#prevBtn { right: 21px; }
+
+#prevBtn a, #nextBtn a {
+	display: block;
+	text-indent: -5000px;
+	width: 10px;
+	background: url("http://www.houacupunctureclinic.com/images/btn_prev.gif") no-repeat 0 0;
+}
+
+#nextBtn a, #slider1next a { background: url("http://www.houacupunctureclinic.com/images/btn_next.gif") no-repeat 0 0; }
+
+/* ----------------------------------------------------------------
+
+  PAGE= @REFERENCE
+  
+------------------------------------------------------------------- */
+section#reference article h2 {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #13b6bd;
+	font-size: 100%;
+	margin-bottom: 4px;
+	margin-top: 20px;
+}
+
+section#reference article h3 {
+	font-size: 240%;
+	color: #323232;
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	letter-spacing: -1px;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+
+section#reference article p.url { margin-bottom: 25px; }
+
+section#reference article p.url a { color: #f0eba8; }
+
+#reference-editorial { font-size: 110%; }
+
+#reference-editorial p {
+	line-height: 1.4em;
+	margin-bottom: 1.4em;
+}
+
+#reference-editorial ul,  #reference-editorial ol {
+	line-height: 1.4em;
+	margin-bottom: 1.4em;
+}
+
+#reference-editorial li {
+	line-height: 1.4em;
+	list-style: disc;
+	list-style-position: inside;
+}
+
+#reference-editorial img { display: block; }
+
+#reference-editorial p.chapeau {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 170%;
+	color: #bbb;
+	margin-bottom: 30px;
+}
+
+#reference-editorial p.chapeau a {
+	display: block;
+	position: relative;
+	float: left;
+	margin-right: 15px;
+	border: 3px solid #333;
+}
+
+#reference-editorial a:hover { border: 3px solid #13b6bd; }
+
+#reference-editorial p.chapeau a span {
+	display: block;
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	width: 20px;
+	height: 14px;
+	background: url("http://www.houacupunctureclinic.com/images/arrow-zoom.gif") no-repeat 0 0;
+	z-index: 99;
+}
+
+section#reference aside a { color: #f0eba8; }
+
+section#reference aside a:hover { color: #13b6bd; }
+
+section#reference aside dt {
+	font-size: 95%;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+section#reference aside dd {
+	padding: 0.5em 0;
+	color: #999;
+}
+
+#panel-container {
+	width: 730px;
+	background: #1a1a1a url("http://www.houacupunctureclinic.com/images/bg-dotted-black.gif") repeat-x 0 0;
+	display: none;
+	position: relative;
+}
+
+#panel { padding: 25px 20px 20px 20px; }
+
+#panel .close {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+/* ----------------------------------------------------------------
+
+  @CLIENTS LIST 
+  
+------------------------------------------------------------------- */
+section#clients-list section {
+	width: 750px;
+	margin-right: -20px;
+	background: url("http://www.houacupunctureclinic.com/images/bg-dotted-clients.gif") no-repeat 0 0;
+}
+
+#clients-list ul { font-size: 110%; }
+
+#clients-list li {
+	width: 230px;
+	float: left;
+	padding: 1em 0;
+	border-bottom: 1px solid #333;
+	margin-right: 20px;
+	color: #ccc;
+}
+
+#clients-list li a { color: #f0eba8; }
+
+#clients-list li a:hover { color: #13b6bd; }
+
+section#clients-list aside dt {
+	font-size: 95%;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	margin-top: 13px;
+	padding-bottom: 17px;
+}
+
+section#clients-list aside dd {
+	padding: 0.5em 0;
+	color: #999;
+}
+
+/* ----------------------------------------------------------------
+
+  @SERVICES
+  
+------------------------------------------------------------------- */
+section.service section {
+	width: 750px;
+	margin-right: -20px;
+}
+
+section.service article {
+	margin-bottom: 10px;
+	float: left;
+	font-size: 110%;
+}
+
+section.service article {
+	width: 460px;
+	margin-right: 40px;
+}
+
+section.service article h3 {
+	margin-bottom: 1em;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 150%;
+	color: #f0eba8;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1.33em;
+}
+
+section.service article p {
+	line-height: 1.5em;
+	color: #999;
+}
+
+section.service section aside {
+	width: 230px;
+	text-align: right;
+	padding: 0;
+	background: none;
+}
+
+section.service section aside h3 {
+	font-size: 95%;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+	color: #666;
+}
+
+section.service section aside li {
+	font-size: 95%;
+	margin-bottom: 0.5em;
+	text-transform:capitalize;
+}
+
+section#applications article {
+	width: 230px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 30px;
+	float: left;
+	font-size: 110%;
+	background: url("http://www.houacupunctureclinic.com/images/bg-dotted-black.gif") repeat-x 0 100%;
+}
+
+section#applications article h3 { font-size: 100%; }
+
+section#applications article.last {
+	padding-bottom: 0;
+	background: none;
+	margin-bottom: 30px;
+}
+
+/* ----------------------------------------------------------------
+
+  @LAB
+  
+------------------------------------------------------------------- */
+section.lab section {
+	width: 750px;
+	margin-right: -20px;
+}
+
+section.lab article {
+	margin-bottom: 10px;
+	float: left;
+	font-size: 110%;
+}
+
+section.lab article { /*width: 460px;*/
+  margin-right: 40px; }
+
+section.lab article h3 {
+	margin-bottom: 1em;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 150%;
+	color: #f0eba8;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1.33em;
+}
+
+section.lab article p {
+	line-height: 1.5em;
+	margin-top:10px;
+	color: #999;
+}
+
+section.lab section aside {
+	width: 230px;
+	text-align: right;
+	padding: 0;
+	background: none;
+}
+
+section.lab section aside h3 {
+	font-size: 95%;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+	color: #666;
+}
+
+section.lab section aside li {
+	font-size: 95%;
+	margin-bottom: 0.5em;
+}
+
+/* ----------------------------------------------------------------
+
+  @AGENCE
+  
+------------------------------------------------------------------- */
+#agence-content section h2 {
+	margin: 1em 0;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 300%;
+	color: #f0eba8;
+	font-weight: normal;
+	line-height: 1.33em;
+	letter-spacing: -1px;
+}
+
+#agence-content section #chapeau { margin-bottom: 4em; }
+
+#agence-content section #chapeau p {
+	font-size: 140%;
+	line-height: 1.5em;
+}
+
+#agence-content section blockquote {
+	float: left;
+	width: 230px;
+	margin-right: 30px;
+	margin-bottom: 10px;
+	border-right: 1px solid #333;
+	padding: 1em 0;
+}
+
+#agence-content section blockquote p.cite {
+	font-size: 120%;
+	color: #555;
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	margin-right: 20px;
+	line-height: 1.33em;
+}
+
+#agence-content section blockquote p.cite span {
+	font-size: 150%;
+	color: #bbb;
+}
+
+#agence-content section blockquote p.author {
+	font-size: 100%;
+	color: #555;
+	margin-right: 20px;
+	line-height: 1.33em;
+	margin-bottom: 0;
+}
+
+#agence-content section h3 {
+	font-size: 180%;
+	margin-top: 2.5em;
+	margin-bottom: 0.5em;
+	color: #f0eba8;
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+#agence-content section p {
+	font-size: 110%;
+	color: #ccc;
+	margin-bottom: 1em;
+	line-height: 1.5em;
+}
+
+.twitter { margin:15px 0; }
+
+.twitter p.info {
+	padding-top:8px;
+	color:#9c9c9c;
+}
+
+.twitter p.message {
+	color:#9c9c9c;
+	font-style:italic;
+	font-size:120%;
+}
+
+.twitter p.message a { color:#9c9c9c; }
+
+.twitter p.message a:hover { text-decoration:underline; }
+
+.twitter .logo { position:relative; }
+
+.twitter .logo img {
+	border:2px solid white;
+	float:left;
+	margin-right:10px;
+	margin:8px 10px 8px 8px;
+}
+
+.twitter .logo .site {
+	position:absolute;
+	border:none;
+	padding:0;
+	left:-8px;
+	top:-8px;
+}
+
+/* ----------------------------------------------------------------
+
+  @AGENCE-TEAM
+  
+------------------------------------------------------------------- */
+
+section#agence-team section {
+	width: 750px;
+	margin-right: -20px;
+	/* background: url("http://www.houacupunctureclinic.com/img/bg-dotted-clients.gif") no-repeat 0 0; */
+  margin-top: -20px;
+}
+
+section#agence-team article {
+	margin-bottom: 35px;
+	padding-top: 20px;
+	float: left;
+	width: 230px;
+	margin-right: 20px;
+	background: url("http://www.houacupunctureclinic.com/images/bg-dotted-black.gif") repeat-x 0 0;
+}
+
+section#agence-team article h3 {
+	margin: 1em 0 0.5em 0;
+	font-size: 130%;
+	color: #fff;
+	line-height: 1.33em;
+}
+
+section#agence-team article h3 em {
+	display: block;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 80%;
+	color: #f0eba8;
+	font-weight: normal;
+	line-height: 1.33em;
+}
+
+section#agence-team article p {
+	line-height: 1.33em;
+	color: #999;
+	font-size: 100%;
+	margin-bottom: 1em;
+}
+
+section#agence-team article ul {
+	line-height: 1.33em;
+	font-size: 100%;
+}
+
+.chapeau p {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 170%;
+	color: #bbb;
+	margin-bottom: 30px;
+}
+
+/* ----------------------------------------------------------------
+
+  @AGENCE-JOBS
+  
+------------------------------------------------------------------- */
+section#agence-jobs section {
+	width: 750px;
+	margin-right: -20px;
+	/* background: url("http://www.houacupunctureclinic.com/img/bg-dotted-clients.gif") no-repeat 0 0; */
+  margin-top: -20px;
+}
+
+section#agence-jobs article {
+	margin-bottom: 35px;
+	padding-top: 20px;
+	float: left;
+	width: 230px;
+	margin-right: 20px;
+	background: url("http://www.houacupunctureclinic.com/images/bg-dotted-black.gif") repeat-x 0 0;
+}
+
+section#agence-jobs article h3 {
+	margin: 1em 0 0.5em 0;
+	font-size: 130%;
+	color: #fff;
+	line-height: 1.33em;
+}
+
+section#agence-jobs article p {
+	line-height: 1.33em;
+	color: #999;
+	font-size: 100%;
+	margin-bottom: 1em;
+}
+
+/*   PAGINATION  */
+
+.pagination {
+	border-top: 1px dotted #999;
+	padding-top: 30px;
+	margin:0 0 20px 0;
+	text-align:left;
+	color:#252525;
+}
+
+.pagination a {
+	background: #444;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px 8px;
+	text-decoration: none;
+}
+
+.pagination .on {
+	background: #13B6BD;
+	font-weight:bold;
+	padding: 5px 8px;
+	text-decoration: none;
+}
+
+.pagination .separateur { display: none; }
+
+.pagination .pagination_label { display: none; }
+
+.pagination a:hover {
+	background: #13B6BD;
+	color: #fff;
+}
+
+/* ----------------------------------------------------------------
+
+  @FOOTER 
+  
+------------------------------------------------------------------- */
+footer {
+	display: block;
+	border-top: 1px dotted #999;
+	margin: 0 30px;
+	width:100%;
+}
+
+footer p {
+	padding: 30px 0;
+	text-align: center;
+	color: #666;
+}
+
+/* ----------------------------------------------------------------
+
+  @SELF-CLEARING 
+  
+------------------------------------------------------------------- */
+
+section#contact-panel ul:after, .twitter:after, nav ul:after, header:after, footer:after, section:after, section#posts article:after, #slider-container p:after, #reference-editorial:after, #clients-list:after, section.service section:after, section.lab section:after, section#contact-panel div:after, section#form-panel fieldset div:after, .pagination:after {
+	content: ".";
+	display: block;
+	height: 0;
+	text-indent: -5000px;
+	visibility: hidden;
+	clear: both;
+}
+
+/* ----------------------------------------------------------------
+
+  @INPUT FORM 
+  
+------------------------------------------------------------------- */
+
+input {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; 
+	font-size:13px;
+}
+
+input.input-text{
+	border:1px solid #999;
+	color:#666666;
+	width:230px;
+	padding:4px;
+}
+
+label {
+	display:block;
+	margin-bottom:10px;
+	color:#555555;
+	line-height:25px;
+}
+
+label span {
+	display:block;
+	float:left;
+	padding:0 6px 0 0;
+	width:150px;
+	text-align:left;
+	font-weight:bold;
+}
+
+label select {
+	font-size:12px;
+	padding:2px;
+}
+
+form .submit {
+	margin:5px 0 0 156px;;
+	padding:8px;
+	width:240px;
+	border:none;
+	background: #B6004B;
+	color:#FFF;
+	cursor: pointer;
+}
+
+form textarea {
+	border:1px solid #999;
+	color:#666666;
+	font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+	padding: 4px;
+	margin:0 0 10px 0;
+	width: 230px;
+}
+
+ /* COLOR CHART -----------
+ 
+ white      #fff
+ light beige  #f9f7f4
+ medium beige #f1ede7
+ 
+ text grey    #2c2d2d
+ dark grey    #121212
+ 
+ blue     #0d85ad
+ pink     #d1004f
+
+------------------------ */
+
+select.mobileSelect {
+   border: 1px solid #555;
+   padding: 0.5em;
+   font-size: 22px;
+   line-height: 1.2em;
+   width: 80%;
+   background: #fff;
+   background: url('../down-arrow.png') right center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d6ddbe));
+   -webkit-appearance: none;
+   -webkit-box-shadow: 1px 1px 1px #fff;
+   -webkit-border-radius: 0.5em;
+   width:500px;
+}
